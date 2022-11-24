@@ -3,7 +3,7 @@
 
 
 import java.util.Scanner;
-public class program { 
+public class task_first { 
     static int sum(int n) {
         int result = 0;
         for (int i = 1; i <= n; i ++) {
@@ -16,10 +16,8 @@ public class program {
         for (int i = 1; i <= n; i ++) {
             result = result * i;
         }
-        return result;
-           
+        return result;       
     } 
-
 
     public static void main(String[] args) {
         Scanner iScanner = new Scanner(System.in);
@@ -36,6 +34,7 @@ public class program {
             break;
             
         }
+        iScanner.close();
     }
 }           
     

@@ -3,14 +3,17 @@
 
 public class task_second {
     public static void main(String[] args) {
-        int n = 10;
-        for (int i = 2; i <= n; i++) {
-            for (int j = 2; j <= i; j++) {
-                if (i % j != 0) {
-                    System.out.println(i);
+        int input = 1000;
+        boolean b = true;
+        for (int P = 2; P <= input; P++) {
+            for (int i = 2; i < P; i++) {
+                if (P % i == 0) {
+                    b = false;
+                    break;
                 }
             }
+            if (b) System.out.println(P);
+            else b = true;
         }
-    }
-    
+    } 
 }
